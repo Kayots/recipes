@@ -6,6 +6,7 @@
     <link href="../../dist/output.css" rel="stylesheet" />
     <title>Filipino: Recipe Book</title>
   </head>
+
   <body class="h-[calc(100vh-4rem)]">
     <header class="flex items-center bg-amber-500 h-16 w-full">
       <nav class="flex justify-between items-center w-full">
@@ -24,24 +25,67 @@
         </div>
       </nav>
     </header>
-    <div
-      class="h-full w-64 border-r-2 flex flex-col font-sans text-2xl gap-y-4 font-semibold"
-    >
-      <a
-        class="flex items-center hover:pointer mt-6 hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
-        href="./pritongitlog.html"
-        >Pritong Itlog
-      </a>
-      <a
-        class="flex items-center hover:pointer hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
-        href="#"
-        >Pritong Hotdog</a
+    <div class="h-full w-full flex">
+      <!-- sidebar -->
+      <div
+        name="sidebar"
+        class="h-full w-64 border-r-2 flex flex-col font-sans text-2xl gap-y-4 font-semibold"
       >
-      <a
-        class="flex items-center hover:pointer hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
-        href="./instantnoodles.html"
-        >Instant Noodles</a
-      >
+        <a
+          class="flex items-center hover:pointer mt-6 hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
+          href="./pritongitlog.html"
+          >Pritong Itlog
+        </a>
+        <a
+          class="flex items-center hover:pointer hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
+          href="#"
+          >Pritong Hotdog</a
+        >
+        <a
+          class="flex items-center hover:pointer hover:text-amber-500 rounded-3xl h-12 pl-4 mx-2 text-amber-400"
+          href="./instantnoodles.html"
+          >Instant Noodles</a
+        >
+      </div>
+      <!-- main div -->
+      <div class="flex w-full h-full flex-col items-center">
+        <img class="h-1/2 w-1/4 border-2 my-10" src="" alt="Food Image" />
+        <!-- title and box div -->
+        <div class="flex w-full h-full flex-col items-center">
+          <p class="text-2xl font-sans font-semibold">Pritong Hotdog</p>
+          <!-- two box div -->
+          <div class="flex w-full h-full justify-center space-x-10">
+            <!-- ingredients div -->
+            <div class="w-96 h-full flex flex-col items-center gap-10">
+              <div
+                name="ingredients"
+                class="h-full w-full flex flex-col mt-8 bg-gray-100 p-4 mb-16 rounded-xl"
+              >
+                <p class="text-xl mb-2">Ingredients</p>
+                <ol class="list-decimal list-inside space-y-2 font-light">
+                  <li>Hotdog</li>
+                  <li>Cooking oil</li>
+                </ol>
+              </div>
+            </div>
+            <!-- procedure div -->
+            <div class="w-96 h-full flex flex-col items-center">
+              <div
+                name="procedure"
+                class="h-full w-full flex flex-col mt-8 bg-gray-100 p-4 mb-16 rounded-xl"
+              >
+                <p class="text-xl mb-2">Procedure</p>
+                <ol class="list-decimal list-inside space-y-2 font-light">
+                  <li>Put some oil in the pan and put it on low heat</li>
+                  <li>Put the hotdog in</li>
+                  <li>Cook until hotdog is enlarged and looks cooked</li>
+                  <li>Enjoy!</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
